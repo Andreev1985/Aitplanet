@@ -1,34 +1,45 @@
-@font-face {
-font-family: 'helveticaneue';
-src: url('../fonts/roboto-bold_1-webfont.woff') ('woff');
-url('../fonts/roboto-bold_1-webfont.woff2') ('woff2')
-}
-font-weight:bold;*/700*/
-font-style: normal;
-}
-@font-face { 
-font-family: 'helveticaneue';
-src: url('../fonts/roboto-lightitalic_1-webfont.woff') format ('woff');
-url('../fonts/roboto-lightitalic_1-webfont.woff2') format('woff2'),
-font-weight:300;
-font-style:italic;
-}
-@font-face {
-font-family: 'helveticaneue';
-src: url('../fonts/roboto-light_1-webfont.woff') ('woff'); 
-url('../fonts/roboto-light_1-webfont.woff2') ('woff2'),
-}
-font-weight:300;
-font-style:normal;
-}
-  @font-face {
+@import './layout/base.css';
+@import './layout/fonts.css';
 
-
-.body {
-  font-family: "helveticaneucyrlight";
+@import "./blocks/header.css";
+@import "./blocks/logo.css";
+@font-face {
+  font-family: 'roboto';
+  src: url('../../fonts/roboto-bold_1-webfont.woff2') format('woff2'),
+      url('../../fonts/roboto-bold_1-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
-font: weight 300;
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../../fonts/roboto-lightitalic_1-webfont.woff2') format('woff2'),
+      url('../../fonts/roboto-lightitalic_1-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../../fonts/roboto-light_1-webfont.woff') format('woff2'),
+      url('../../fonts/roboto-light_1-webfont.woff2') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.header {
+  
+}
+
 .header__container {
-.background-color:#4b73b5;
+    background-color: #4b73b5;
+    width: 1100px;
+    height: 72px;
 }
-width: 1100px; height:72px;
+
+
+
+
+.logo__img {
+border-left: 100%    
+}
