@@ -41,32 +41,32 @@ color: #fff;
 }
 .header__container {
   position: relative;
-  height: 77 px;
+  height: 77px;
 }
 
 
 .logo {
- 
-top:20px;
-left: 20px;
+top:13px;
+
+left: 0px;
 
 }
 
-.contacts {
-  position: absolute;
-  top: 13px;
-  right: 0;
- text-align: right;
- font-style:normal; 
+.contacts{
+	display: inline-block;
+	text-align: right;
+	float: right;
+	margin-top: 0px;
 }
+
 .contacts__phone {
-color: inherit;
-text-decoration: none;
-  font-size: 21px;
-  font-weight: bold;
-}
+	color: #fff;
+	text-decoration: none;
+	font-size: 21px;
+	font-weight: bold;
+	display: block;
+} 
+
 .contacts__schedule {
-color:#fff;
-opacity: .7;
-font-size: 14px;
-}
+	display: inline-block;
+	position: relative;
