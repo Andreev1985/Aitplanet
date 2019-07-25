@@ -12,6 +12,7 @@
 }
 
 @font-face {
+
   font-family: 'roboto';
   src: url('../../fonts/roboto-lightitalic_1-webfont.woff2') format('woff2'),
       url('../../fonts/roboto-lightitalic_1-webfont.woff') format('woff');
@@ -26,20 +27,46 @@
   font-weight: 300;
   font-style: normal;
 }
-
+.body {
+  margin: 0;
+}
 .header {
-  
+  background:#4b73b5;
+color: #fff;
 }
 
+.container {
+  width: 1050px;
+  margin: 0 auto;
+}
 .header__container {
-    background-color: #4b73b5;
-    width: 1100px;
-    height: 72px;
+  position: relative;
+  height: 77 px;
 }
 
 
+.logo {
+ 
+top:20px;
+left: 20px;
 
+}
 
-.logo__img {
-border-left: 100%    
+.contacts {
+  position: absolute;
+  top: 13px;
+  right: 0;
+ text-align: right;
+ font-style:normal; 
+}
+.contacts__phone {
+color: inherit;
+text-decoration: none;
+  font-size: 21px;
+  font-weight: bold;
+}
+.contacts__schedule {
+color:#fff;
+opacity: .7;
+font-size: 14px;
 }
