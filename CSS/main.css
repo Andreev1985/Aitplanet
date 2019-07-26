@@ -67,10 +67,10 @@ left: 0px;
 } 
 
 .banner {
-  float: right;
-  width: 1650px;
-height: 1650px;
-text-align: right;
+  position: absolute;
+  width: 135px;
+  top:80px;
+  margin-left:52%;
 }
 
 .tariffs .tariffs__content{
