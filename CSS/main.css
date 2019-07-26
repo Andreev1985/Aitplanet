@@ -39,10 +39,7 @@ color: #fff;
   width: 1050px;
   margin: 0 auto;
 }
-.header__container {
-  position: relative;
-  height: 77px;
-}
+
 
 
 .logo {
@@ -53,20 +50,41 @@ left: 0px;
 }
 
 .contacts{
-	display: inline-block;
-	text-align: right;
-	float: right;
-	margin-top: 0px;
+	position:absolute
+	top:13px;
+  right:0;
+  
+  text-aligin:right;
+  font-style:normal;
 }
 
 .contacts__phone {
-	color: #fff;
+	color: inherit;
 	text-decoration: none;
 	font-size: 21px;
 	font-weight: bold;
 	display: block;
 } 
 
-.contacts__schedule {
-	display: inline-block;
-	position: relative;
+.banner {
+  float: right;
+  width: 1650px;
+height: 1650px;
+text-align: right;
+}
+
+.tariffs .tariffs__content{
+  
+ width: 145px;
+ height: 319px;
+ background:#4b73b5;
+ position:absolute;
+ top:400px;
+ left:150px;
+}
+.wrap{
+  width: 300px;
+  height:300px;
+  border: 1px solid black;
+  position: relative;
+}
