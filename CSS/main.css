@@ -107,13 +107,13 @@ width: 700px;
 .sidebar {
 width: 197px;
 }
-.main-nav {
+.main-nav__link {
 font-size: 12px;
 letter-spacing: 2.4px;
 font-weight:bold;
 text-transform: uppercase;
 }
-.main-nav {
+.main-nav__link {
   content: "";
   display: inline-block;
   vertical-align: middle;
