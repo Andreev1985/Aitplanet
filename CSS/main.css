@@ -107,13 +107,13 @@ width: 700px;
 .sidebar {
 width: 197px;
 }
-.main-nav__link {
+.main-nav {
 font-size: 12px;
 letter-spacing: 2.4px;
 font-weight:bold;
 text-transform: uppercase;
 }
-.mmain-nav__link::before {
+.main-nav {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -121,7 +121,8 @@ text-transform: uppercase;
   height: 18px;
   background:no-repeat center center;
   }
-  .main-nav__link--icon--direction:before {
+  
+  .main-nav__link--icon--main:before {
     background-image: url('../img/icons/menu/main_icon.png')
   }
   .main-nav__link--icon--feed:before {
@@ -130,4 +131,4 @@ text-transform: uppercase;
   .main-nav__link--icon--team:before {
     background-image: url('../img/icons/menu/team_icon.png')
   }
-}
+  
