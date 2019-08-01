@@ -1,14 +1,5 @@
 .header__container {
-    background-color:#4b73b5;
+    background-color: #4b73b5;
     width: 100%;
     height: 72px;
-}
-.header__logo {
-float: left;
-margin: 15px;
-}
-
-.header__contacts {
-float: right;
-margin: 15px;
 }

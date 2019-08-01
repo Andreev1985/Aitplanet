@@ -27,37 +27,50 @@
   font-weight: 300;
   font-style: normal;
 }
+body {
+  font: 16px/1.42 "roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ul{
+  margin: 0;
+  padding: 0;
+}
+.ul >li{ 
+  list-style:none;
+}
 .body {
   margin: 0;
 }
+
 .header {
   background:#4b73b5;
 color: #fff;
+width: 100%;
+    height: 77px;
 }
 
 .container {
   width: 1050px;
   margin: 0 auto;
 }
-
-
-
-.logo {
-top:13px;
-
-left: 0px;
-
+.header__container {
+  position: relative;
+  width: 100%;
+  height: 72px;
 }
-
+.logo {
+ position:absolute;
+top:13px;
+left: 0px;
+}
 .contacts{
-	position:absolute
-	top:13px;
+	position:absolute;
+top:13px;	
   right:0;
-  
-  text-aligin:right;
   font-style:normal;
 }
-
 .contacts__phone {
 	color: inherit;
 	text-decoration: none;
@@ -66,25 +79,55 @@ left: 0px;
 	display: block;
 } 
 
-.banner {
-  position: absolute;
+ .banner {
+position:absolute;
+margin-left:52%;
+
+   position: absolute;
   width: 135px;
   top:80px;
-  margin-left:52%;
+  height:299px;
+ 
 }
-
-.tariffs .tariffs__content{
-  
- width: 145px;
- height: 319px;
- background:#4b73b5;
- position:absolute;
- top:400px;
- left:150px;
+.contacts__schedule{
+  color: #fff;
+  opacity: .7;
 }
-.wrap{
-  width: 300px;
-  height:300px;
-  border: 1px solid black;
-  position: relative;
+.banner preview-pic {
+  display: block;
+  max-width: 100%;
+}
+.page, .sidebar {
+display: inline-block;
+vertical-align: top;
+}
+.page{
+width: 700px;
+}
+.sidebar {
+width: 197px;
+}
+.main-nav__link {
+font-size: 12px;
+letter-spacing: 2.4px;
+font-weight:bold;
+text-transform: uppercase;
+}
+.mmain-nav__link::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 23px;
+  height: 18px;
+  background:no-repeat center center;
+  }
+  .main-nav__link--icon--direction:before {
+    background-image: url('../img/icons/menu/main_icon.png')
+  }
+  .main-nav__link--icon--feed:before {
+    background-image: url('../img/icons/menu/feed_icon.png')
+  }
+  .main-nav__link--icon--team:before {
+    background-image: url('../img/icons/menu/team_icon.png')
+  }
 }
