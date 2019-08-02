@@ -107,28 +107,40 @@ width: 700px;
 .sidebar {
 width: 197px;
 }
-.main-nav__link {
-font-size: 12px;
-letter-spacing: 2.4px;
-font-weight:bold;
-text-transform: uppercase;
+.main-nav__item {
+  font-size: 12px;
+letter-spacing:2.4px;
+font-weight: bold;
+text-transform:uppercase;
+color: #4b73b5;
+text-decoration:none;
+display: inline-block;
 }
-.main-nav__link {
+.main-nav__item:last-child {
+  margin-bottom:26;
+}
+.main-nav__link:before { 
   content: "";
   display: inline-block;
   vertical-align: middle;
-  width: 23px;
+  width: 24px;
   height: 18px;
-  background:no-repeat center center;
-  }
   
-  .main-nav__link--icon--main:before {
-    background-image: url('../img/icons/menu/main_icon.png')
-  }
-  .main-nav__link--icon--feed:before {
-    background-image: url('../img/icons/menu/feed_icon.png')
-  }
-  .main-nav__link--icon--team:before {
-    background-image: url('../img/icons/menu/team_icon.png')
-  }
+
+  background: no-repeat center center;
+  margin-right: 20px;
+}
+  .main-nav__link:hover {
+
+  color:#221f1f;
   
+}
+.main-nav__icon--main::before {
+background-image: url('../img/icons/menu/main-hover.png');
+}
+.main-nav__icon--feed::before{
+  background-image: url('../img/icons/menu/feed-hover.png');
+  }
+  .main-nav__icon--team:before {
+    background-image: url('../img/icons/menu/team-hover.png');
+  }
