@@ -32,7 +32,9 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
-
+*{
+box-sizing:border-box;  
+}
 .ul{
   margin: 0;
   padding: 0;
@@ -126,7 +128,7 @@ display: inline-block;
   display: inline-block;
   vertical-align: middle;
   width: 24px;
-  height: 18px;
+  height: 33px;
   
 
   background: no-repeat center center;
@@ -138,13 +140,13 @@ display: inline-block;
   
 }
 .main-nav__icon--main::before {
-background-image: url('/img/main-hover.png');
+background-image: url('../img/icons/menu/main.png');
 }
 .main-nav__icon--feed::before{
-  background-image: url('/img/feed-hover.png');
+  background-image: url('../img/icons/menu/feed.png');
   }
   .main-nav__icon--team:before {
-    background-image: url('/img/team-hover.png');
+    background-image: url('../img/icons/menu/team.png');
   }
   /*тарифы*/
   .section-title__tariffs {
@@ -163,18 +165,18 @@ background-image: url('/img/main-hover.png');
   color:#221f1f;
   }
   .tariff-block {
-    
+
+
     display:inline-block;
     width:18%;
     padding:50px 3% 30px;
      box-sizing:border-box; 
-  background-image: url(')
-    }
-
+  background-image: url('')
+  }
   .tariff-block__title {
 /* Style for "стандарт" */
 width: 73px;
-height: 10px;
+height: 100%;
 color: #212121;
 font-family: Roboto;
 font-size: 11px;
@@ -184,3 +186,5 @@ text-transform: uppercase;
 /* Text style for "стандарт" */
 letter-spacing: 2.88px;
   }
+ 
+    
