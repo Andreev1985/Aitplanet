@@ -5,8 +5,8 @@
 @import "./blocks/logo.css";
 @font-face {
   font-family: 'roboto';
-  src: url('../../fonts/roboto-bold_1-webfont.woff2') format('woff2'),
-      url('../../fonts/roboto-bold_1-webfont.woff') format('woff');
+  src: url('../fonts/roboto-bold_1-webfont.woff2') format('woff2'),
+      url('../fonts/roboto-bold_1-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -14,19 +14,21 @@
 @font-face {
 
   font-family: 'roboto';
-  src: url('../../fonts/roboto-lightitalic_1-webfont.woff2') format('woff2'),
-      url('../../fonts/roboto-lightitalic_1-webfont.woff') format('woff');
+  src: url('../fonts/roboto-lightitalic_1-webfont.woff2') format('woff2'),
+      url('../fonts/roboto-lightitalic_1-webfont.woff') format('woff');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'roboto';
-  src: url('../../fonts/roboto-light_1-webfont.woff') format('woff2'),
-      url('../../fonts/roboto-light_1-webfont.woff2') format('woff');
+  src: url('../fonts/roboto-light_1-webfont.woff2') format('woff2'),
+      url('../fonts/roboto-light_1-webfont.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
+
+
 body {
   font: 16px/1.42 "roboto", Arial, Helvetica, sans-serif;
   margin: 0;
@@ -42,17 +44,23 @@ box-sizing:border-box;
 .ul >li{ 
   list-style:none;
 }
-.body {
-  margin: 0;
+.wrapper {
+  min-width:1100px;
+  min-height:100%;
+  overflow:hidden;
 }
-
+body{ 
+margin: 0;
+}
 .header {
-  background:#4b73b5;
-color: #fff;
-width: 100%;
-    height: 77px;
+  background: #4b73b5;
+  color: #fff;
+ margin-bottom: 23px;
+ 
 }
-
+* {
+  box-sizing: border-box;
+}
 .container {
   width: 1050px;
   margin: 0 auto;
@@ -81,26 +89,22 @@ top:13px;
 	display: block;
 } 
 
-.banner {
-  position:absolute;
-  margin-left:52%;
-  
-     position: absolute;
-    width: 1007px;
-    top:80px;
-    height:299px;
-   
+.banner__img {
+  position: absolute; 
+ left:1100px;
+ top:50px;
+ margin:10px;
 }
-.banner preview-pic {
-  display: block;
+.banner__img-pic {
+  display:block;
   max-width: 100%;
+position: relative;
 }
+
 .contacts__schedule{
   color: #fff;
   opacity: .7;
 }
-
-
 .page, .sidebar {
 display: inline-block;
 vertical-align: top;
@@ -149,8 +153,13 @@ background-image: url('../img/icons/menu/main.png');
     background-image: url('../img/icons/menu/team.png');
   }
   /*тарифы*/
-  .section-title__tariffs {
-    width: 180px; /*задаем ширину блока*/
+/* tariff-block__icon*/
+
+
+
+
+ .section-title__tariffs {
+  width: 180px; /*задаем ширину блока*/
   height:50px; /*задаем высоту блока*/
   transform: translate(-50%, -50%);
   position: absolute; 
@@ -163,28 +172,69 @@ background-image: url('../img/icons/menu/main.png');
   line-height:38px;
   letter-spacing:0px;
   color:#221f1f;
-  }
-  .tariff-block {
+ }
+ .tariff-block__title{
+  width: 73px;
+  height: 10px;
+  color: #212121;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 51.38px;
+  text-transform: uppercase;
+left:288px;
+top:624px;
+right:739px;
+  letter-spacing: 2.88px;  
+ }
+ .tariff-block {
+   width: 300px;
+   padding:15%;
+   background: #fff;
+   border:1px solid #221f1f;
+   position:relative;
+   color: #5a5a5a;
+display: inline-block;
+text-align: center;
+width: 30%;
+padding: 40px 2% 27px; 
+}
 
+ .tariff-block__price {
+   
+  margin:35px 60px 55px;
+font-size:21px;
 
-    display:inline-block;
-    width:18%;
-    padding:50px 3% 30px;
-     box-sizing:border-box; 
-  background-image: url('')
-  }
-  .tariff-block__title {
-/* Style for "стандарт" */
+ }
+ *{
+ box-sizing: border-box  
+ }
+.tariff-block__price {
+ top:846px; 
+  left:287px;
+right:740px;
 width: 73px;
-height: 100%;
+height: 40px;
 color: #212121;
 font-family: Roboto;
-font-size: 11px;
-font-weight: 700;
-line-height: 51.38px;
-text-transform: uppercase;
-/* Text style for "стандарт" */
-letter-spacing: 2.88px;
-  }
- 
-    
+font-size: 54px;
+font-weight: 400;
+text-align: center;
+color: #202020;
+line-height: 182.3px;
+letter-spacing: -1.07px;
+line-height: 173.58px;
+}
+.tariff-block__icon{
+  margin:auto;
+  border-radius:50%;
+  background-repeat:no repeat;
+ background-position:center;
+background-color:#4b73b5;
+width:70px;
+ height:70px;
+}
+*{
+ box-sizing:border-box; 
+}
+                    
