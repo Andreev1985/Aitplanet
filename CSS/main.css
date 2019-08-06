@@ -45,6 +45,7 @@ box-sizing:border-box;
 
 .wrapper {
   display: inline-block;
+  min-width: 100%;
 }
 .header {
   background: #4b73b5;
@@ -155,7 +156,27 @@ background-image: url('../img/icons/menu/main.png');
     background-image: url('../img/icons/menu/team.png');
   }
   /*тарифы*/
-/* tariff-block__icon*/
+.tariff-block__icon.tariff-block__icon::before {
+  content: ""; 
+  display: block;
+	margin: 0 auto;
+
+}
+.tariff-block__icon.tariff__icon--standard:before {
+  background-image:url(../img/decor/standard.png);
+width: 70px;
+height: 70px;
+}
+.tariff__icon--premium::before {
+  background-image: url(../img/decor/premium.png);
+  width: 70px;
+  height:70px;
+}
+.tariff__icon--luxury::before {
+  background-image: url(../img/decor/luxury.png);
+  width: 70px;
+  height: 70px;
+}
 
 
 
@@ -165,7 +186,7 @@ background-image: url('../img/icons/menu/main.png');
   height:50px; /*задаем высоту блока*/
   
   position: absolute; 
-  top:303px; 
+  top:350px; 
   left: 65%;
   opacity:100%;
   font-size:49px;
@@ -173,6 +194,7 @@ background-image: url('../img/icons/menu/main.png');
   font-style:bold;
   line-height:38px;
   letter-spacing:0px;
+  padding-right:25%;
   color:#221f1f;
  }
  .tariff-block__title{
@@ -192,12 +214,12 @@ right:73px;
   letter-spacing: 2.88px;  
  }
  .tariff-block {
-   width: 18px;
+   width: 15px;
    padding:300px;
    display: inline-block;
    position:relative;
 width: 30%;
-padding-right:15px
+padding-right:10px
 }
  .tariff-block__price {
    
@@ -236,33 +258,5 @@ width:70px;
 *{
  box-sizing:border-box; 
 }                             
-.tariff-block__icon::before {
-  content: ""; 
-  display: block;
-	margin: 0 auto;
 
-}
-.tariff-block__icon--standard:before {
-  background-image:url(../img/decor/standard.png);
-width: 70px;
-height: 70px;
-}
-.tariff-block__icon--premium::before {
-  background-image: url(../img/decor/premium.png);
-  width: 70px;
-  height:70px;
-}
-.tariff-block__icon--luxury::before {
-  background-image: url(../img/decor/luxury.png);
-  width: 70px;
-  height: 70px;
-}
-.last-news{
-  width: 450px;
-  height: 43px;
-  color: #221f1f;
-  font-family: Roboto;
-  font-size: 49px;
-  font-weight: 700;
-  line-height: 38px;
-}
+/*новости*/ 
